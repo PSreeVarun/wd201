@@ -4,6 +4,7 @@ const path = require('path');
 
 const app = express();
 const argv = minimist(process.argv.slice(2));
+const PORT = argv.port || 3000;  // Ensure this line is present and correct
 
 
 // Middleware to parse request body
