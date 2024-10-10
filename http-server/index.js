@@ -4,7 +4,7 @@ const path = require('path');
 
 const app = express();
 const argv = minimist(process.argv.slice(2));
-const PORT = argv.port || 3000;  // Default to port 3000 if not provided
+
 
 // Middleware to parse request body
 app.use(express.urlencoded({ extended: true }));
